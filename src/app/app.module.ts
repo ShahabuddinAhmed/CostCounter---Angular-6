@@ -17,6 +17,8 @@ import { DebitComponent } from './debit/debit.component';
 import { CreditComponent } from './credit/credit.component';
 import { ViewCreditComponent } from './view-credit/view-credit.component';
 import { ViewDebitComponent } from './view-debit/view-debit.component';
+import { ViewComponent } from './view/view.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { ViewDebitComponent } from './view-debit/view-debit.component';
     DebitComponent,
     CreditComponent,
     ViewCreditComponent,
-    ViewDebitComponent
+    ViewDebitComponent,
+    ViewComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
