@@ -1,3 +1,5 @@
+import { ViewComponent } from './view/view.component';
+import { AboutComponent } from './about/about.component';
 import { ViewCreditComponent } from './view-credit/view-credit.component';
 import { ViewDebitComponent } from './view-debit/view-debit.component';
 import { HomeComponent } from './home/home.component';
@@ -12,5 +14,7 @@ export const appRoutes: Routes = [
     { path: 'register', component: UserRegisterComponent },
     { path: 'user', component: UserInfoComponent },
     { path: 'debit', component: ViewDebitComponent },
-    { path: 'credit', component: ViewCreditComponent }
+    { path: 'credit', component: ViewCreditComponent },
+    { path: 'about', component: AboutComponent },
+    { path: 'userinfo', component: ViewComponent }
 ];
