@@ -1,3 +1,4 @@
+import { UserService } from './share/user.service';
 import { appRoutes } from './routes';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -19,6 +20,8 @@ import { ViewCreditComponent } from './view-credit/view-credit.component';
 import { ViewDebitComponent } from './view-debit/view-debit.component';
 import { ViewComponent } from './view/view.component';
 import { AboutComponent } from './about/about.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -44,9 +47,11 @@ import { AboutComponent } from './about/about.component';
     MatButtonModule,
     MatCheckboxModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
